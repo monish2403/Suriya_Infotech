@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base File</title>
+    <title>{% block title %} {% endblock title %}</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extra_css %}{% endblock extra_css %}
 </head>
 <body>
     <!-- Navbar 1 -->
@@ -185,6 +186,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
+     {% block extra_js %}{% endblock extra_js %}
     <script src="{% static 'js/base.js' %}"></script>
 </body>
 </html>
