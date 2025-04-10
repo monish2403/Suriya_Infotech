@@ -147,29 +147,15 @@ body{
     color: white;
 }
 
-/* Media Query */
-@media (max-width: 768px) {
-    .contact-info small{
-        font-size: 12px !important;
-    }
-    .contact-info small i{
-        margin: 0 5px;
-    }
-    .Social-media-icons a{
-        font-size: 12px;
-        margin-left: 5px;
-    }
+/* Navbar 3 */
+.navbar3{
+    background: #1c1c1e !important;
+    font-family: var(--secondary-font) !important;
+    color: #f5f5f5 !important;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-@media (max-width: 576px) {
-    .contact-info small{
-        font-size: 10px !important;
-    }
-    .contact-info small i{
-        margin: 0 2px;
-    }
-    .Social-media-icons a{
-        font-size: 10px;
-        margin-left: 2px;
-    }
+.nav-link:hover{
+    color: #00bcd4 !important;
 }
