@@ -4,7 +4,11 @@ const day = now.getDay();
 const hour = now.getHours();
 
 if (hour >= 10 && hour < 21) {
-  statusText.innerText = "🟢 Open Now";
-} else {
-  statusText.innerText = "🔴 Currently Closed";
+  statusText.innerText = "Open Now";
+} 
+else if (hour >= 21 && hour < 24) {
+  statusText.innerText = "Closing Soon";
+} 
+else {
+  statusText.innerText = "Currently Closed";
 }

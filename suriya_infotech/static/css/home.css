@@ -5,6 +5,10 @@
     --secondary-font : 'Rajdhani', sans-serif;
 }
 
+body{
+  background: #121212 !important;
+}
+
 .hero-slide {
     position: relative;
     height: 85vh;
@@ -61,7 +65,8 @@
   /* Why Choose Us Section */
   .why-choose-us {
     padding: 30px 0 !important;
-    background-color: #fff;
+    background-color: #121212;
+    color: #daa520;
   }
   
   .feature-box {
@@ -72,7 +77,8 @@
   
   .feature-box:hover {
     transform: translateY(-5px);
-    background-color: #f8f9fa;
+    background-color: #daa520;
+    color: #121212;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   }
   
@@ -85,44 +91,4 @@
     color: #0052cc;
   }
 
-  /* Featured Products Section */
-  .featured-products{
-    padding: 30px 0 !important;
-  }
-
-  .featured-products h2 {
-    font-size: 2rem;
-    font-family: var(--primary-font) !important;
-  }
-  
-  .filter-btn {
-    background: #f1f1f1;
-    border: none;
-    padding: 8px 16px;
-    margin-left: 5px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-  
-  .filter-btn.active,
-  .filter-btn:hover {
-    background-color: #0052cc;
-    color: #fff;
-  }
-  
-  .product-card {
-    border-radius: 16px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-img-top {
-    height: 250px;
-    object-fit: cover;
-  }
   
