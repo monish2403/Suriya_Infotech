@@ -1,94 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
-:root{
-    --primary-font : 'Poppins', sans-serif;
-    --secondary-font : 'Rajdhani', sans-serif;
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Rajdhani", sans-serif;
 }
 
-body{
+body {
   background: #121212 !important;
 }
 
 .hero-slide {
-    position: relative;
-    height: 85vh;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .hero-slide .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-  }
-  
-  .hero-slide .z-1 {
-    z-index: 1;
-  }
-  
-  .hero-heading{
-    font-size: 50px;
-    font-weight: 600;
-    font-family: var(--primary-font);
-  }
+  position: relative;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+}
 
-  .lead{
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--secondary-font);
-  }
+.hero-slide .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
 
-  .btn{
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--secondary-font);
-    background-color: #ff6600;
-    color: #fff;
-    border: none !important;
-    transition: 0.3s ease;
-  }
+.hero-slide .z-1 {
+  z-index: 1;
+}
 
-  .btn:hover{
-    background-color: #e65c00;
-    box-shadow: 0 0 15px #ff6600aa;
-    transform: translateY(-2px);
-  }
+.hero-heading {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
 
-  #heroCarousel{
-    width: 100% !important;
-  }
+.lead {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--secondary-font);
+}
 
-  /* Why Choose Us Section */
-  .why-choose-us {
-    padding: 30px 0 !important;
-    background-color: #121212;
-    color: #daa520;
-  }
-  
-  .feature-box {
-    padding: 20px;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  }
-  
-  .feature-box:hover {
-    transform: translateY(-5px);
-    background-color: #daa520;
-    color: #121212;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
-  
-  .icon-bg {
-    display: inline-block;
-    background-color: #e6f0ff;
-    padding: 15px;
-    border-radius: 12px;
-    font-size: 28px;
-    color: #0052cc;
-  }
+.btn {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--secondary-font);
+  background-color: #ff6600;
+  color: #fff;
+  border: none !important;
+  transition: 0.3s ease;
+}
 
-  
+.btn:hover {
+  background-color: #e65c00;
+  box-shadow: 0 0 15px #ff6600aa;
+  transform: translateY(-2px);
+}
+
+#heroCarousel {
+  width: 100% !important;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 30px 0 !important;
+  background-color: #121212;
+  color: #daa520;
+}
+
+.feature-box {
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  background-color: #daa520;
+  color: #121212;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-bg {
+  display: inline-block;
+  background-color: #e6f0ff;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 28px;
+  color: #0052cc;
+}
+
+.why-head{
+  font-size: 25px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+.why-body{
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+/* Featured Product Section */
+.featured-products {
+  padding: 20px 0 !important;
+  background: #121212 !important;
+  color: white;
+}
+
+.feature-head{
+  font-size: 25px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+.feature-body{
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+.product-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+}
+
+.img-wrap {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Feedback Form Section */
+.feedback-form-section {
+  background-color: #121212;
+  color: #eeeeee;
+}
+.form-control:focus {
+  border-color: #daa520;
+  box-shadow: 0 0 20px #daa520;
+}
