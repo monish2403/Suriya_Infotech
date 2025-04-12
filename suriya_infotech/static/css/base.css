@@ -12,19 +12,20 @@
 }
 
 body{
-    background: #efefef;
+    background: #121212 !important;
 }
 
 /* Navbar 1 */
 .textnav{
-    background: #1c1c1e !important;
-    color: #f5f5f5 !important;
+    background:  #daa520 !important;
+    color: #121212 !important;
     font-family: var(--primary-font) !important;
+    font-size: 20px !important;
 }
 
 .contact-info small{
     font-family: var(--secondary-font) !important;
-    font-weight: 500 !important;
+    font-weight: 700 !important;
     margin-right: 10px !important;
 }
 
@@ -35,36 +36,68 @@ body{
 
 .contact-info small a{
     text-decoration: none;
-    color: #f5f5f5;
+    color: #121212;
     transition: all 0.3s ease-in-out !important;
 }
 
 .contact-info small a:hover{
-    color: #00bcd4 !important;
+    color: #eeeeee;
 }
 
 .Social-media-icons a{
     text-decoration: none;
     color: #f5f5f5 !important;
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 25px;
 }
 
-.Social-media-icons a:hover{
-    color: #00bcd4 !important;
+.insta{
+    background: linear-gradient(
+  45deg,
+  #f09433,
+  #e6683c,
+  #dc2743,
+  #cc2366,
+  #bc1888
+);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.facebook{
+    background: linear-gradient(
+  45deg,
+  #3b5998,
+  #8b9dc3
+);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.youtube{
+    background: linear-gradient(
+  45deg,
+  #ff0000,
+  #ff0000
+);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out !important;
 }
 
 /* Navbar 2 */
 .custom-navbar{
-    color: #1c1c1e !important;
-    background: #fff !important;
+    color: #daa520 !important;
+    background: #121212 !important;
 }
 
 .logo-text{
     font-family: var(--primary-font) !important;
     font-weight: 600 !important;
     font-size: 20px !important;
-    color: #1c1c1e !important;
+    color: #daa520 !important;
 }
 
 .logo-text span{
@@ -89,29 +122,28 @@ body{
 }
 
 .search-btn{
-    background: #00bcd4 !important;
-    color: #fff !important;
+    background: #daa520 !important;
+    color: #121212 !important;
     font-size: 15px !important;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
     border-radius: 0 5px 5px 0 !important;
     border: 1px solid #00bcd4 !important;
 }
 
 .search-btn:hover{
-    background: #fff !important;
-    color: #00bcd4 !important;
-    border: 1px solid #00bcd4 !important;
-    box-shadow: 0 0 5px #00bcd4 !important;
+    background: #121212 !important;
+    color: #daa520 !important;
+    border: 1px solid #daa520 !important;
+    box-shadow: 0 0 5px #daa520 !important;
 }
 
 .add-2-cart{
-    color: #1c1c1e !important;
+    color: #daa520 !important;
     font-size: 20px !important;
-    font-weight: 600 !important;
 }
 
 .add-2-cart:hover{
-    color: #00bcd4 !important;
+    color: #eeeeee !important;
 }
 
 .login-btn{
@@ -144,26 +176,31 @@ body{
 }
 
 .login-btn:hover{
-    color: white;
+    color: white !important;
 }
 
 /* Navbar 3 */
 .navbar3{
-    background: #1c1c1e !important;
+    background: #daa520  !important;
     font-family: var(--secondary-font) !important;
-    color: #f5f5f5 !important;
-    font-size: 15px;
-    font-weight: 600;
+    color: #121212 !important;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.nav-link{
+    color: #121212 !important;
 }
 
 .nav-link:hover{
-    color: #00bcd4 !important;
+    color: #eeeeee !important;
 }
 
 /* Footer */
 .main-footer{
-    background: #1c1c1e;
+    background: #daa520;
     padding-bottom: 20px;
+    color: #121212 !important;
 }
 
 .footer-heading{
@@ -172,6 +209,8 @@ body{
     margin-bottom: 20px;
     display: inline-block;
     font-family: var(--secondary-font) !important;
+    font-weight: 700;
+    color: #121212 !important;
 }
 
 .footer-heading::after{
@@ -181,7 +220,7 @@ body{
     bottom: 1px;
     width: 100%;
     height: 1px;
-    background: #efefef;
+    background: #121212;
 }
 
 .footer-heading::before{
@@ -191,10 +230,12 @@ body{
     bottom: 2px;
     width: 50px;
     height: 3px;
-    background: #ff0000;
+    background: red;
 }
 
 .footer-about{
+    color: #121212;
+    font-weight: 700;
     font-size: 15px;
     text-align: justify;
     font-family: var(--secondary-font) !important;
@@ -203,42 +244,46 @@ body{
 .footer-link{
     font-size: 15px;
     text-decoration: none;
-    color: #f5f5f5;
+    color: #121212;
+    font-weight: 700;
     font-family: var(--secondary-font);
 }
 
 .footer-link:hover{
-    color: #00bcd4 !important;
+    color: #eeeeee !important;
 }
 
 .footer-working{
+    font-weight: 700;
+    color: #121212;
     font-size: 15px;
     font-family: var(--secondary-font) !important;
 }
 
+#shop-status{
+    font-size: 20px;
+    font-family: var(--secondary-font) !important;
+    font-weight: 700;
+    color: #121212 !important;
+}
+
 .footer-contact{
     font-size: 15px;
+    font-weight: 700;
+    color: #121212 !important;
     font-family: var(--secondary-font) !important;
 }
 
 .footer-contact a{
     text-decoration: none;
-    color: #f5f5f5;
+    color: #121212;
 }
 
 .footer-contact a:hover{
-    color: #00bcd4 !important;
+    color: #eeeeee !important;
 }
-
-.social-icons a i{
-    color: #f5f5f5;
+.social-icons{
     font-size: 20px;
-    margin-right: 10px;
-    transition: all 0.3s ease-in-out !important;
-}
-
-.social-icons a i:hover{
-    color: #00bcd4 !important;
 }
 
 .footer iframe{
@@ -248,6 +293,8 @@ body{
 
 .footer-bottom{
     font-size: 15px;
+    font-weight: 700;
+    color: #121212 !important;
     font-family: var(--primary-font) !important;
 }
 

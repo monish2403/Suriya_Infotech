@@ -1,190 +1,299 @@
-{% extends 'base.html' %}
-
-{% block title %}Home{% endblock %}
-
-
-
-{% load static %}
-
-
-    {% block extra_css %}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
-     {% endblock extra_css %}
-
-     {% block content %}
-    <section id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-      
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white" style="background-image: url('../static/assets/hero1.jpg');">
-              <div class="overlay"></div>
-              <div class="z-1 position-relative">
-                <h1 class="display-4 hero-heading">Welcome to Suriya Infotech</h1>
-                <p class="lead">Explore our wide range of laptops & accessories</p>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white" style="background-image: url('../static/assets/hero2.jpg');">
-              <div class="overlay"></div>
-              <div class="z-1 position-relative">
-                <h1 class="display-4 hero-heading">Refurbished Tech. Unbeatable Prices.</h1>
-                <p class="lead">High quality. Low cost. Like-new performance.</p>
-                <a href="#" class="btn">View Refurbished</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <div class="hero-slide d-flex align-items-center justify-content-center text-center text-white" style="background-image: url('../static/assets/hero3.jpg');">
-              <div class="overlay"></div>
-              <div class="z-1 position-relative">
-                <h1 class="display-4 hero-heading">Gaming Laptops & Accessories</h1>
-                <p class="lead">Play hard with performance gear</p>
-                <a href="#" class="btn">Browse Gaming</a>
-              </div>
-            </div>
-          </div>
-      
+{% extends 'base.html' %} {% block title %}Home{% endblock %} {% load static %}
+{% block extra_css %}
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock extra_css %} {% block content %}
+<section
+  id="heroCarousel"
+  class="carousel slide carousel-fade"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div
+        class="hero-slide d-flex align-items-center justify-content-center text-center text-white"
+        style="background-image: url('../static/assets/hero1.jpg')"
+      >
+        <div class="overlay"></div>
+        <div class="z-1 position-relative">
+          <h1 class="display-4 hero-heading">Welcome to Suriya Infotech</h1>
+          <p class="lead">Explore our wide range of laptops & accessories</p>
+          <a href="#" class="btn">Shop Now</a>
         </div>
-      
-        <!-- Optional Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </section>
+      </div>
+    </div>
 
-      <!-- Why Choose Us Section -->
-      <section class="why-choose-us">
-        <div class="container">
-          <div class="row text-center justify-content-center">
-            
-            <!-- Feature 1 -->
-            <div class="col-md-4 mb-4">
-              <div class="feature-box">
-                <div class="icon-bg mb-3">
-                  <i class="fas fa-microchip"></i>
-                </div>
-                <h5 class="fw-bold">Latest Technology</h5>
-                <p>Access to the newest processors and cutting-edge components.</p>
-              </div>
-            </div>
-      
-            <!-- Feature 2 -->
-            <div class="col-md-4 mb-4">
-              <div class="feature-box">
-                <div class="icon-bg mb-3">
-                  <i class="fas fa-tools"></i>
-                </div>
-                <h5 class="fw-bold">Custom Builds</h5>
-                <p>Personalized configurations to match your specific needs.</p>
-              </div>
-            </div>
-      
-            <!-- Feature 3 -->
-            <div class="col-md-4 mb-4">
-              <div class="feature-box">
-                <div class="icon-bg mb-3">
-                  <i class="fas fa-headset"></i>
-                </div>
-                <h5 class="fw-bold">Expert Support</h5>
-                <p>Lifetime technical support and warranty on all products.</p>
-              </div>
-            </div>
-      
-          </div>
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div
+        class="hero-slide d-flex align-items-center justify-content-center text-center text-white"
+        style="background-image: url('../static/assets/hero2.jpg')"
+      >
+        <div class="overlay"></div>
+        <div class="z-1 position-relative">
+          <h1 class="display-4 hero-heading">
+            Refurbished Tech. Unbeatable Prices.
+          </h1>
+          <p class="lead">High quality. Low cost. Like-new performance.</p>
+          <a href="#" class="btn">View Refurbished</a>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <!-- Featured Products Section -->
-      <section class="featured-products">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <div>
-              <h2 class="fw-bold">Featured Products</h2>
-              <p class="text-muted">Explore our selection of premium computers and laptops</p>
-            </div>
-            <div>
-              <button class="btn filter-btn active">All</button>
-              <button class="btn filter-btn">Laptops</button>
-              <button class="btn filter-btn">Desktops</button>
-            </div>
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div
+        class="hero-slide d-flex align-items-center justify-content-center text-center text-white"
+        style="background-image: url('../static/assets/hero3.jpg')"
+      >
+        <div class="overlay"></div>
+        <div class="z-1 position-relative">
+          <h1 class="display-4 hero-heading">Gaming Laptops & Accessories</h1>
+          <p class="lead">Play hard with performance gear</p>
+          <a href="#" class="btn">Browse Gaming</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional Controls -->
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+  <div class="container">
+    <div class="row text-center justify-content-center">
+
+      <!-- Feature 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="feature-box">
+          <div class="icon-bg mb-3">
+            <i class="fas fa-microchip"></i>
           </div>
-      
+          <h5 class="fw-bold">Latest Technology</h5>
+          <p>Access to the newest processors and cutting-edge components.</p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="feature-box">
+          <div class="icon-bg mb-3">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h5 class="fw-bold">Custom Builds</h5>
+          <p>Personalized configurations to match your specific needs.</p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="feature-box">
+          <div class="icon-bg mb-3">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h5 class="fw-bold">Expert Support</h5>
+          <p>Lifetime technical support and warranty on all products.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products Carousel Section -->
+<section class="featured-products py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h2 class="fw-bold">Featured Products</h2>
+        <p class="text-muted">Explore our selection of premium computers and laptops</p>
+      </div>
+      <div>
+        <button class="btn btn-outline-dark me-2" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="btn btn-outline-dark" data-bs-target="#productCarousel" data-bs-slide="next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
           <div class="row g-4">
-      
             <!-- Product 1 -->
             <div class="col-md-4">
               <div class="card product-card h-100 shadow-sm">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfHGNQEdpNmZbccTvUPIQyAJGApaQd4IKjzg&s" class="card-img-top rounded-top" alt="MacBook Pro">
                 <div class="card-body">
-                  <div class="mb-2">
-                    <span class="text-warning">
-                      ★★★★★
-                    </span>
-                    <span class="text-muted small">(4.8)</span>
-                  </div>
-                  <h5 class="fw-bold">MacBook Pro 16"</h5>
-                  <p class="text-muted small">Apple M2 Pro chip, 16GB RAM, 512GB SSD, Liquid Retina XDR display, up to 22 hours of battery.</p>
+                  <span class="text-warning">★★★★★</span>
+                  <span class="text-muted small">(4.8)</span>
+                  <h5 class="fw-bold mt-2">MacBook Pro 16"</h5>
+                  <p class="text-muted small">Apple M2 Pro chip, 16GB RAM, 512GB SSD.</p>
                   <h5 class="text-primary fw-bold">$2,499</h5>
-                  <p class="text-muted small">or starting at $208/mo</p>
-                  <a href="#" class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
                 </div>
               </div>
             </div>
-      
             <!-- Product 2 -->
             <div class="col-md-4">
               <div class="card product-card h-100 shadow-sm">
                 <img src="https://m.media-amazon.com/images/I/71EbMDsXK+L.jpg" class="card-img-top rounded-top" alt="Dell XPS 15">
                 <div class="card-body">
-                  <div class="mb-2">
-                    <span class="text-warning">★★★★☆</span>
-                    <span class="text-muted small">(4.7)</span>
-                  </div>
-                  <h5 class="fw-bold">Dell XPS 15</h5>
-                  <p class="text-muted small">Intel i9-13900H, 32GB RAM, 1TB SSD, RTX 4070, 15.6" 4K OLED Touch Display.</p>
+                  <span class="text-warning">★★★★☆</span>
+                  <span class="text-muted small">(4.7)</span>
+                  <h5 class="fw-bold mt-2">Dell XPS 15</h5>
+                  <p class="text-muted small">Intel i9, 32GB RAM, 1TB SSD, 4K OLED.</p>
                   <h5 class="text-primary fw-bold">$2,299</h5>
-                  <p class="text-muted small">or starting at $192/mo</p>
-                  <a href="#" class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
                 </div>
               </div>
             </div>
-      
             <!-- Product 3 -->
             <div class="col-md-4">
-              <div class="card product-card h-100 shadow-sm position-relative">
+              <div class="card product-card h-100 shadow-sm">
                 <img src="https://static.cybertron.com/clx/home/pcs-laps-section/custom-gaming-pcs.jpg" class="card-img-top rounded-top" alt="Gaming PC">
                 <div class="card-body">
-                  <div class="mb-2">
-                    <span class="text-warning">★★★★★</span>
-                    <span class="text-muted small">(5.0)</span>
-                  </div>
-                  <h5 class="fw-bold">Custom Gaming PC</h5>
-                  <p class="text-muted small">RTX 4090, Intel i9-13900KS, 64GB DDR5, 4TB NVMe SSD, Custom Liquid Cooling.</p>
+                  <span class="text-warning">★★★★★</span>
+                  <span class="text-muted small">(5.0)</span>
+                  <h5 class="fw-bold mt-2">Custom Gaming PC</h5>
+                  <p class="text-muted small">RTX 4090, i9, 64GB DDR5, 4TB SSD.</p>
                   <h5 class="text-primary fw-bold">$4,999</h5>
-                  <p class="text-muted small">or starting at $417/mo</p>
-                  <a href="#" class="btn btn-primary w-100"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
                 </div>
               </div>
             </div>
-      
           </div>
         </div>
-      </section>
-      
-      {% endblock content %}
-      
-      {% block extra_js %}
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-       <script src="{% static 'js/home.js' %}"></script>
-      {% endblock extra_js %}
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <!-- Add 3 more product cards here -->
+            <!-- Product 4 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 shadow-sm">
+                <img src="https://m.media-amazon.com/images/I/81f5LhDU5yL._AC_SL1500_.jpg" class="card-img-top" alt="HP Spectre">
+                <div class="card-body">
+                  <span class="text-warning">★★★★☆</span>
+                  <span class="text-muted small">(4.6)</span>
+                  <h5 class="fw-bold mt-2">HP Spectre x360</h5>
+                  <p class="text-muted small">13th Gen i7, 16GB RAM, 1TB SSD, OLED.</p>
+                  <h5 class="text-primary fw-bold">$1,799</h5>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 shadow-sm">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71o8Q5XJS5L._AC_SL1500_.jpg" class="card-img-top" alt="Lenovo Legion">
+                <div class="card-body">
+                  <span class="text-warning">★★★★★</span>
+                  <span class="text-muted small">(4.9)</span>
+                  <h5 class="fw-bold mt-2">Lenovo Legion 7i</h5>
+                  <p class="text-muted small">RTX 4080, i9, 32GB, 2TB SSD, 240Hz Display.</p>
+                  <h5 class="text-primary fw-bold">$3,199</h5>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 shadow-sm">
+                <img src="https://m.media-amazon.com/images/I/61GH2RoKMbL._AC_SL1500_.jpg" class="card-img-top" alt="Asus ROG">
+                <div class="card-body">
+                  <span class="text-warning">★★★★★</span>
+                  <span class="text-muted small">(4.8)</span>
+                  <h5 class="fw-bold mt-2">ASUS ROG Strix</h5>
+                  <p class="text-muted small">Ryzen 9, RTX 4080, 32GB RAM, 2TB SSD.</p>
+                  <h5 class="text-primary fw-bold">$2,899</h5>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <!-- Product 7 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 shadow-sm">
+                <img src="https://m.media-amazon.com/images/I/715iWYj1-rL._AC_SL1500_.jpg" class="card-img-top" alt="Acer Predator">
+                <div class="card-body">
+                  <span class="text-warning">★★★★☆</span>
+                  <span class="text-muted small">(4.7)</span>
+                  <h5 class="fw-bold mt-2">Acer Predator Helios</h5>
+                  <p class="text-muted small">Intel i7, RTX 3070, 32GB, 1TB SSD.</p>
+                  <h5 class="text-primary fw-bold">$1,999</h5>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 shadow-sm">
+                <img src="https://m.media-amazon.com/images/I/710hzB8fM+L._AC_SL1500_.jpg" class="card-img-top" alt="MSI Creator Z16">
+                <div class="card-body">
+                  <span class="text-warning">★★★★☆</span>
+                  <span class="text-muted small">(4.6)</span>
+                  <h5 class="fw-bold mt-2">MSI Creator Z16</h5>
+                  <p class="text-muted small">i9, RTX 3060, 32GB, 1TB SSD, QHD+ Touch.</p>
+                  <h5 class="text-primary fw-bold">$2,199</h5>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-md-4">
+              <div class="card product-card h-100 shadow-sm">
+                <img src="https://m.media-amazon.com/images/I/71pFcm8J9yL._AC_SL1500_.jpg" class="card-img-top" alt="iMac">
+                <div class="card-body">
+                  <span class="text-warning">★★★★★</span>
+                  <span class="text-muted small">(5.0)</span>
+                  <h5 class="fw-bold mt-2">Apple iMac 24"</h5>
+                  <p class="text-muted small">M1 Chip, 8-core GPU, 16GB RAM, 512GB SSD.</p>
+                  <h5 class="text-primary fw-bold">$1,699</h5>
+                  <a href="#" class="btn btn-primary w-100 mt-2"><i class="fas fa-cart-plus me-2"></i>Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %} {% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock extra_js %}
