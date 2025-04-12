@@ -14,6 +14,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
     {% block extra_css %}{% endblock extra_css %}
 </head>
 <body>
@@ -58,7 +59,7 @@
             </div>
             <!-- Right: Cart + Login -->
             <div class="d-flex align-items-center">
-              <a href="#" class="text-white position-relative me-4 add-2-cart">
+              <a href="#" class="text-dark position-relative me-4 add-2-cart">
                 <i class="fa-solid fa-cart-shopping"></i>
               </a>
               <a href="#" class="btn login-btn">Login</a>
@@ -106,7 +107,7 @@
     </nav>  
     
     <!-- Main Content Area -->
-    <div class="container mt-4">
+    <div>
         {% block content %}
         {% endblock content %}
     </div>
