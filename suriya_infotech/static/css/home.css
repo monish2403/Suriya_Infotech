@@ -5,6 +5,10 @@
     --secondary-font : 'Rajdhani', sans-serif;
 }
 
+body{
+  width: 100vw;
+}
+
 .hero-slide {
     position: relative;
     height: 85vh;
@@ -52,4 +56,8 @@
     background-color: #e65c00;
     box-shadow: 0 0 15px #ff6600aa;
     transform: translateY(-2px);
+  }
+
+  #heroCarousel{
+    width: 100% !important;
   }
