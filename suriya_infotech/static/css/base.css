@@ -114,11 +114,12 @@ body{
     color: #1c1c1e !important;
     font-size: 15px !important;
     font-weight: 600;
+    font-family: var(--secondary-font);
 }
 
 .nav-search:focus{
-    border: 1px solid #00bcd4 !important;
-    box-shadow: 0 0 5px #00bcd4 !important;
+    border: 1px solid #daa520 !important;
+    box-shadow: 0 0 5px #daa520 !important;
 }
 
 .search-btn{
