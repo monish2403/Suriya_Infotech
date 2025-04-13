@@ -10,34 +10,32 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="{% static 'css/laptop.css' %}">
+    <link rel="stylesheet" href="{% static 'css/desktop.css' %}">
     {% endblock extra_css %}
 {% block content %}
-<section class="laptop-section py-5">
+<section class="desktop-section py-5">
     <div class="container">
   
       <!-- 🔘 Brand Buttons -->
       <div class="mb-4 text-center">
-        <button class="btn me-2 lap-btn" value="all">ALL</button>
-        <button class="btn me-2 lap-btn" value="asus">ASUS</button>
-        <button class="btn me-2 lap-btn" value="hp">HP</button>
-        <button class="btn me-2 lap-btn" value="dell">DELL</button>
-        <button class="btn me-2 lap-btn" value="lenovo">LENOVO</button>
-        <button class="btn me-2 lap-btn" value="acer">ACER</button>
-        <button class="btn me-2 lap-btn" value="samsung">SAMSUNG</button>
-        <button class="btn lap-btn" value="apple">APPLE</button>
+        <button class="btn me-2 desktop-btn" value="all">ALL</button>
+        <button class="btn me-2 desktop-btn" value="asus">ASUS</button>
+        <button class="btn me-2 desktop-btn" value="hp">HP</button>
+        <button class="btn me-2 desktop-btn" value="dell">DELL</button>
+        <button class="btn me-2 desktop-btn" value="lenovo">LENOVO</button>
+        <button class="btn me-2 desktop-btn" value="acer">ACER</button>
       </div>
   
       <!-- 🖥️ Laptop Cards -->
       <div class="row g-4">
   
         {% for laptop in laptops %}
-        <div class="col-md-4" id="lap-card">
-          <div class="card h-100 laptop-card shadow-sm" data-category="{{laptop.category}}">
-            <img src="{{laptop.image1.url}}" class="card-img-top" alt="ASUS Laptop">
+        <div class="col-md-4" id="desktop-card">
+          <div class="card h-100 desktop-card shadow-sm" data-category="{{laptop.category}}">
+            <img src="{{laptop.image1.url}}" class="card-img-top" alt="{{laptop.name}}">
             <div class="card-body">
-              <h5 class="fw-bold lap-text">{{laptop.name}}</h5>
-              <p class="text-muted small mb-2 lap-description">{{laptop.screen_size}} • {{laptop.ram}} RAM • {{laptop.hard_disk}} SSD • {{laptop.os}}</p>
+              <h5 class="fw-bold desktop-text">{{laptop.name}}</h5>
+              <p class="text-muted small mb-2 desktop-description">{{laptop.screen_size}} • {{laptop.ram}} RAM • {{laptop.hard_disk}} SSD • {{laptop.os}}</p>
               <div class="d-flex justify-content-between">
                 <a href="#" class="btn view-btn">View</a>
                 <a href="#" class="btn add-to-cart-btn"><i class="fas fa-cart-shopping me-1"></i>Add to Cart</a>
@@ -53,5 +51,5 @@
 {% endblock content %}
 
 {% block extra_js %}
-<script src="{% static 'js/laptop.js' %}"></script>
+<script src="{% static 'js/desktop.js' %}"></script>
 {% endblock %}

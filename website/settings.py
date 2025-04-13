@@ -16,6 +16,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -63,7 +64,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'suriya_infotech',
         'USER': 'postgres',
-        'PASSWORD': 'root',
+        'PASSWORD': 'monish',
         'HOST': 'localhost',
         'PORT': '5432',
         
