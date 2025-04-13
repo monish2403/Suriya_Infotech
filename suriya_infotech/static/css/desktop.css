@@ -9,63 +9,63 @@ body {
   background: #121212 !important;
 }
 
-.laptop-card img {
+.desktop-card img {
   height: 220px;
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-.laptop-card .card-body {
+.desktop-card .card-body {
   padding: 16px;
 }
 
-.laptop-card .btn {
+.desktop-card .btn {
   min-width: 100px;
 }
 
-.lap-btn {
+.desktop-btn {
   color: #121212;
   background: #daa520;
   font-size: 18px;
   font-weight: 700;
 }
 
-.lap-btn:hover {
+.desktop-btn:hover {
   background: #121212;
   color: #daa520;
 }
-.lap-text{
+.desktop-text {
   font-size: 20px;
   font-family: var(--primary-font);
 }
 
-.lap-description{
+.desktop-description {
   font-size: 16px;
   font-family: var(--secondary-font);
   font-weight: 800;
 }
 
-.view-btn{
+.view-btn {
   background: #121212;
   color: #daa520;
   font-weight: 600;
   font-family: var(--secondary-font);
 }
 
-.view-btn:hover{
+.view-btn:hover {
   background: #daa520;
   color: #121212;
 }
 
-.add-to-cart-btn{
-  background: #daa520;
-  color: #121212;
+.add-to-cart-btn {
+  background: #121212;
+  color: #daa520;
   font-weight: 600;
   font-family: var(--secondary-font);
 }
 
-.add-to-cart-btn:hover{
-  background: #121212;
-  color: #daa520;
+.add-to-cart-btn:hover {
+  background: #daa520;
+  color: #121212;
 }
