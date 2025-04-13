@@ -7,6 +7,7 @@ urlpatterns = [
     path('',views.home,name='home'),
     path('home/', views.home, name='home'),
     path('laptop/',views.view_laptop,name='laptop'),
+    path('desktop/',views.view_desktop,name='desktop'),
 ]
 
 if settings.DEBUG:
