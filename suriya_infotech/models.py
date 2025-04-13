@@ -1,3 +1,30 @@
 from django.db import models
 
-# Create your models here.
+class laptop(models.Model):
+    name = models.CharField(max_length=100)
+    screen_size = models.CharField(max_length=50)
+    colour = models.CharField(max_length=50)
+    hard_disk = models.CharField(max_length=50)
+    cpu_model = models.CharField(max_length=50)
+    ram = models.CharField(max_length=50)
+    os = models.CharField(max_length=50)
+    price = models.IntegerField()
+    main_image = models.ImageField(upload_to='images/')
+    image1 = models.ImageField(upload_to='images/')
+    image2 = models.ImageField(upload_to='images/')
+    image3 = models.ImageField(upload_to='images/')
+    description = models.TextField()
+    CATEGORY_CHOICES = [
+            ('asus', 'Asus'),
+            ('acer', 'Acer'),
+            ('dell', 'Dell'),
+            ('hp', 'HP'),
+            ('lenovo', 'Lenovo'),
+            ('samsung', 'Samsung'),
+            ('apple', 'Apple')
+        ]
+    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
+    brand = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
