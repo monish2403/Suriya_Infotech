@@ -19,3 +19,6 @@ def view_refurbished(request):
 
 def view_printer(request):
     return render(request, 'printer.html')
+
+def view_gaming(request):
+    return render(request, 'gaming.html')

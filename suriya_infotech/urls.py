@@ -10,6 +10,7 @@ urlpatterns = [
     path('desktop/',views.view_desktop,name='desktop'),
     path('refurbished/',views.view_refurbished,name='refurbished'),
     path('printer/', views.view_printer, name='printer'),
+    path('gaming/', views.view_gaming, name='gaming'),
 ]
 
 if settings.DEBUG:
