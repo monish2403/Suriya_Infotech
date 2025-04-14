@@ -1,0 +1,25 @@
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .custom-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .custom-card img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .custom-card:hover {
+    transform: scale(1.02);
+  }

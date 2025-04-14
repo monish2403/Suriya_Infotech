@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Refurbished{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/refurbished.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-6" onclick="location.href='/laptop';" style="cursor: pointer;">
+      <div class="card custom-card text-white">
+        <img src="{% static 'assets/refurb-lap.jpg' %}" class="card-img" alt="Card image">
+        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+          <h1 class="refurb-text">Laptop</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6" onclick="location.href='/desktop';" style="cursor: pointer;">
+      <div class="card custom-card text-white">
+        <img src="{% static 'assets/refurb-lap.jpg' %}" class="card-img" alt="Card image">
+        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+         <h1 class="refurb-text">Desktop</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

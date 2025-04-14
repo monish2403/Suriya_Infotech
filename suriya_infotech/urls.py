@@ -8,6 +8,8 @@ urlpatterns = [
     path('home/', views.home, name='home'),
     path('laptop/',views.view_laptop,name='laptop'),
     path('desktop/',views.view_desktop,name='desktop'),
+    path('refurbished/',views.view_refurbished,name='refurbished'),
+    path('printer/', views.view_printer, name='printer'),
 ]
 
 if settings.DEBUG:

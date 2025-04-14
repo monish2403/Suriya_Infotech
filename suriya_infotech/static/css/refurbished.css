@@ -1,0 +1,30 @@
+.refurb-text {
+  font-family: "poppins";
+  font-size: 30px;
+  color: #eeeeee;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.custom-card:hover {
+    transform: scale(1.02);
+  }

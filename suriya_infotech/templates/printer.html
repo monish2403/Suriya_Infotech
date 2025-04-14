@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Printers{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/printer.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container py-5">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <a href="https://example.com/page1" class="text-decoration-none">
+          <div class="card custom-card text-white">
+            <img src="https://via.placeholder.com/600x300" class="card-img" alt="Card image">
+            <div class="card-img-overlay">Card Title 1</div>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <a href="https://example.com/page2" class="text-decoration-none">
+          <div class="card custom-card text-white">
+            <img src="https://via.placeholder.com/600x300" class="card-img" alt="Card image">
+            <div class="card-img-overlay">Card Title 2</div>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <a href="https://example.com/page3" class="text-decoration-none">
+          <div class="card custom-card text-white">
+            <img src="https://via.placeholder.com/600x300" class="card-img" alt="Card image">
+            <div class="card-img-overlay">Card Title 3</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
