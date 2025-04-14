@@ -13,3 +13,9 @@ def view_laptop(request):
 def view_desktop(request):
     desktops = Desktop.objects.all() 
     return render(request,'desktop.html',{'desktops': desktops})
+
+def view_refurbished(request):
+    return render(request,'refurbished.html')
+
+def view_printer(request):
+    return render(request, 'printer.html')
