@@ -11,6 +11,8 @@ urlpatterns = [
     path('refurbished/',views.view_refurbished,name='refurbished'),
     path('printer/', views.view_printer, name='printer'),
     path('gaming/', views.view_gaming, name='gaming'),
+    path('refurbished_laptop/', views.view_refurbished_laptop, name='refurbished_laptop'),
+    path('refurbished_desktop/', views.view_refurbished_desktop, name='refurbished_desktop'),
 ]
 
 if settings.DEBUG:

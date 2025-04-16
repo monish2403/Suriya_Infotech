@@ -113,3 +113,78 @@ class Refurbished_Desktop(models.Model):
 
     def __str__(self):
         return self.name
+
+class Ink_printer(models.Model):
+    Brands_Category = [
+        ('epson', 'Epson'),
+        ('canon', 'Canon'),
+        ('brother', 'Brother'),
+        ('hp', 'HP'),
+        ]
+    name = models.CharField(max_length=100)
+    brands = models.CharField(max_length=50, choices=Brands_Category)
+    connectivity = models.CharField(max_length=50)
+    printing_technology = models.CharField(max_length=50)
+    special_features = models.CharField(max_length=50)
+    color = models.CharField(max_length=50)
+    print_speed = models.CharField(max_length=50)
+    item_weight = models.CharField(max_length=50)
+    price = models.IntegerField()
+    main_image = models.ImageField(upload_to='images/ink_printer/')
+    image1 = models.ImageField(upload_to='images/ink_printer/')
+    image2 = models.ImageField(upload_to='images/ink_printer/')
+    image3 = models.ImageField(upload_to='images/ink_printer/')
+    description = models.TextField()
+
+    def __str__(self):
+        return self.brands
+
+class Laser_Jet_printer(models.Model):
+    Brands_category = [
+        ('canon', 'Canon'),
+        ('brother', 'Brother'),
+        ('hp', 'HP'),
+        ]
+    brands = models.CharField(max_length=50, choices=Brands_category)
+    connectivity = models.CharField(max_length=50)
+    Special_features = models.CharField(max_length=50)
+    color = models.CharField(max_length=50)
+    printer_output = models.CharField(max_length=50)
+    item_weight = models.CharField(max_length=50)
+    max_speed = models.CharField(max_length=50)
+    price = models.IntegerField()
+    main_image = models.ImageField(upload_to='images/laser_printer/')
+    image1 = models.ImageField(upload_to='images/laser_printer/')
+    image2 = models.ImageField(upload_to='images/laser_printer/')
+    image3 = models.ImageField(upload_to='images/laser_printer/')
+    description = models.TextField()
+
+    def __str__(self):
+        return self.brands
+
+class Thermal_printer(models.Model):
+    Brands_category = [
+        ('rugtek', 'Rugtek'),
+        ('tvs', 'TVS'),
+    ]
+    name=models.CharField(max_length=100)
+    brands = models.CharField(max_length=50, choices=Brands_category)
+    connectivity = models.CharField(max_length=50)
+    technology = models.CharField(max_length=50)
+    special_features = models.CharField(max_length=50)
+    color = models.CharField(max_length=50)
+    printer_output = models.CharField(max_length=50)
+    print_speed = models.CharField(max_length=50)
+    item_weight = models.CharField(max_length=50)
+    price = models.IntegerField()
+    main_image = models.ImageField(upload_to='images/thermal_printer/')
+    image1 = models.ImageField(upload_to='images/thermal_printer/') 
+    image2 = models.ImageField(upload_to='images/thermal_printer/')
+    image3 = models.ImageField(upload_to='images/thermal_printer/')
+    description = models.TextField()
+
+    def __str__(self):
+        return self.brands
+
+    
+    

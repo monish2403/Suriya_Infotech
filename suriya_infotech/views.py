@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Laptop, Desktop
+from .models import Laptop, Desktop, Refurbished_Laptop, Refurbished_Desktop
 
 # Create your views here.
 
@@ -22,3 +22,11 @@ def view_printer(request):
 
 def view_gaming(request):
     return render(request, 'gaming.html')
+
+def view_refurbished_laptop(request):
+    laptops = Refurbished_Laptop.objects.all()
+    return render(request, 'laptop.html',{'laptops': laptops})
+
+def view_refurbished_desktop(request):
+    desktops = Refurbished_Desktop.objects.all()
+    return render(request, 'desktop.html',{'desktops': desktops})
