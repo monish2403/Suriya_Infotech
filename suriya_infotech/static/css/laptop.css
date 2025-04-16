@@ -69,3 +69,10 @@ body {
   background: #121212;
   color: #daa520;
 }
+
+.price{
+  font-size: 20px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  color: #121212;
+}

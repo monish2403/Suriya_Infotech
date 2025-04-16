@@ -16,7 +16,7 @@
 <section class="laptop-section py-5">
     <div class="container">
   
-      <!-- 🔘 Brand Buttons -->
+      <!-- Brand Buttons -->
       <div class="mb-4 text-center">
         <button class="btn me-2 lap-btn" value="all">ALL</button>
         <button class="btn me-2 lap-btn" value="asus">ASUS</button>
@@ -38,6 +38,7 @@
             <div class="card-body">
               <h5 class="fw-bold lap-text">{{laptop.name}}</h5>
               <p class="text-muted small mb-2 lap-description">{{laptop.screen_size}} • {{laptop.ram}} RAM • {{laptop.hard_disk}} SSD • {{laptop.os}}</p>
+              <p class="price">₹ {{laptop.price}}</p>
               <div class="d-flex justify-content-between">
                 <a href="#" class="btn view-btn">View</a>
                 <a href="#" class="btn add-to-cart-btn"><i class="fas fa-cart-shopping me-1"></i>Add to Cart</a>
