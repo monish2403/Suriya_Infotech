@@ -25,29 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'suriya_infotech',
-    
 ]
-
-AUTHENTICATION_BACKENDS = (
-    'social_core.backends.google.GoogleOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
-    )
-
-JAZZMIN_UI_TWEAKS = {
-    "theme": "cosmo",
-    "dark_mode_theme": "slate",
-    "navbar_small_text": False,
-    "footer_small_text": True,
-    "body_small_text": False,
-    "brand_colour": "navbar-primary",
-    "accent": "accent-primary",
-    "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
-    "sidebar_nav_flat_style": True,
-    "sidebar_nav_legacy_style": False,
-    "sidebar_nav_compact_style": True,
-}
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -93,7 +71,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'suriya_infotech',
         'USER': 'postgres',
-        'PASSWORD': 'root',
+        'PASSWORD': 'monish',
         'HOST': 'localhost',
         'PORT': '5432',
         
