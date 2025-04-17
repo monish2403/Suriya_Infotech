@@ -1,84 +1,124 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %} {% endblock title %}</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
 
     {% block extra_css %}{% endblock extra_css %}
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar 1 -->
     <div class="textnav py-2">
-        <div class="container d-flex justify-content-between align-items-center">
-            <!-- Contact Informations -->
-            <div class="contact-info">
-                <small>
-                    <i class="fa-solid fa-phone"></i>
-                    7708040948
-                    <span>/</span>
-                    6382886230
-                </small>
-                <small>
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:suryainfotechmdu@gmail.com">suryainfotechmdu@gmail.com</a>
-                </small>
-            </div>
-            <!-- Social Media Icons -->
-             <div class="Social-media-icons">
-                <a href="#"><i class="fa-brands fa-instagram insta"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube youtube"></i></a>
-             </div>
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Contact Informations -->
+        <div class="contact-info">
+          <small>
+            <i class="fa-solid fa-phone"></i>
+            7708040948
+            <span>/</span>
+            6382886230
+          </small>
+          <small>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:suryainfotechmdu@gmail.com"
+              >suryainfotechmdu@gmail.com</a
+            >
+          </small>
         </div>
+        <!-- Social Media Icons -->
+        <div class="Social-media-icons">
+          <a href="#"><i class="fa-brands fa-instagram insta"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube youtube"></i></a>
+        </div>
+      </div>
     </div>
     <!-- Navbar 2 -->
-     <nav class="navbar navbar-expand-lg py-3 custom-navbar">
-        <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap">
-            <!-- Left: Logo + Store Name -->
-            <div class="d-flex align-items-center">
-              <img src="{% static 'assets/logo.jpg' %}" alt="Logo" width="40" height="40" class="me-2">
-              <span class="navbar-brand mb-0 h1 logo-text"><span>Suriya</span> Infotech</span>
-            </div>
-            <!-- Center: Search Bar -->
-            <div class="mx-auto w-50">
-              <form class="d-flex">
-                <input class="form-control me-2 nav-search" type="search" placeholder="Type To Explore Our Tech World..." aria-label="Search">
-                <button class="btn search-btn" type="submit">Search</button>
-              </form>
-            </div>
-            <!-- Right: Cart + Login -->
-            <div class="d-flex align-items-center">
-              <a href="#" class="position-relative me-4 add-2-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </a>
-              <a href="#" class="btn login-btn">Login</a>
-            </div>
-          </div>
-     </nav>
+    <nav class="navbar navbar-expand-lg py-3 custom-navbar">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <!-- Left: Logo + Store Name -->
+        <div class="d-flex align-items-center">
+          <img
+            src="{% static 'assets/logo.jpg' %}"
+            alt="Logo"
+            width="40"
+            height="40"
+            class="me-2"
+            style="border-radius: 50%"
+          />
+          <span class="navbar-brand mb-0 h1 logo-text"
+            ><span>Suriya</span> Infotech</span
+          >
+        </div>
+        <!-- Center: Search Bar -->
+        <div class="mx-auto w-50">
+          <form class="d-flex">
+            <input
+              class="form-control me-2 nav-search"
+              type="search"
+              placeholder="Type To Explore Our Tech World..."
+              aria-label="Search"
+            />
+            <button class="btn search-btn" type="submit">Search</button>
+          </form>
+        </div>
+        <!-- Right: Cart + Login -->
+        <div class="d-flex align-items-center">
+          <a href="#" class="position-relative me-4 add-2-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a href="/login" class="btn login-btn">Login</a>
+        </div>
+      </div>
+    </nav>
     <!-- Navbar 3 -->
     <nav class="navbar navbar-expand-lg sticky-top navbar3">
       <div class="container">
         <!-- Brand Logo or Name (optional) -->
         <a class="navbar-brand d-lg-none" href="#">Products</a>
-    
+
         <!-- Toggler / Hamburger -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#thirdNavbar" aria-controls="thirdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#thirdNavbar"
+          aria-controls="thirdNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Navbar Links -->
-        <div class="collapse navbar-collapse justify-content-center" id="thirdNavbar">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="thirdNavbar"
+        >
           <ul class="navbar-nav gap-3">
             <li class="nav-item">
               <a class="nav-link" href="/home">Home</a>
@@ -93,7 +133,7 @@
               <a class="nav-link" href="/refurbished">Refurbished</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gaming</a>
+              <a class="nav-link" href="/gaming">Gaming</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/printer">Printers</a>
@@ -107,90 +147,141 @@
           </ul>
         </div>
       </div>
-    </nav>  
-    
+    </nav>
+
     <!-- Main Content Area -->
-    <div>
-        {% block content %}
-        {% endblock content %}
-    </div>
+    <div>{% block content %} {% endblock content %}</div>
 
     <!-- Footer -->
     <footer class="footer text-white pt-5 main-footer">
-        <div class="container">
-          <div class="row g-4">
-      
-            <!-- Column: About Us -->
-            <div class="col-md-3">
-              <h5 class="footer-heading">Suriya Infotech</h5>
-              <p class="footer-about">We provide the best range of laptops, desktops, gaming gear, and refurbished electronics at unbeatable prices. Walk-in or explore online!</p>
-            </div>
-      
-            <!-- Column: Quick Links -->
-            <div class="col-md-2">
-              <h5 class="footer-heading">Quick Links</h5>
-              <ul class="list-unstyled">
-                <li><a href="{% url 'home' %}" class="footer-link">Home</a></li>
-                <li><a href="{% url 'laptop' %}" class="footer-link">Laptops</a></li>
-                <li><a href="#" class="footer-link">Refurbished</a></li>
-                <li><a href="#" class="footer-link">Gaming</a></li>
-                <li><a href="#" class="footer-link">Accessories</a></li>
-                <li><a href="#" class="footer-link">Desktops</a></li>
-              </ul>
-            </div>
-      
-            <!-- Column: Live Working Hours -->
-            <div class="col-md-2">
-              <h5 class="footer-heading">Working Hours</h5>
-              <p id="shop-status"></p>
-              <p class="footer-working">Mon–Sat: 10 AM – 10 PM <br> Sun: 10Am - 2PM</p>
-            </div>
-      
-            <!-- 4️⃣ Column: Contact Info -->
-            <div class="col-md-3">
-              <h5 class="footer-heading">Contact</h5>
-              <p class="footer-contact"><i class="fas fa-phone-alt me-2"></i>7708040948, 6382886230</p>
-              <p class="footer-contact"><a href="mailto:suryainfotechmdu@gmail.com"><i class="fas fa-envelope me-2"></i>suriyainfotechmdu@gmail.com</a></p>
-              <p class="footer-contact"><i class="fas fa-map-marker-alt me-2"></i>Townhall Road, Madurai</p>
-              <div class="social-icons mt-3">
-                <a href="#" class="me-3 text-white"><i class="fab fa-facebook-f facebook"></i></a>
-                <a href="#" class="me-3 text-white"><i class="fab fa-instagram insta"></i></a>
-                <a href="#" class="me-3 text-white"><i class="fab fa-youtube youtube"></i></a>
-              </div>
-            </div>
-      
-            <!-- 5️⃣ Column: Google Map -->
-            <div class="col-md-2">
-                <h5 class="footer-heading">Find Us</h5>
-                <div style="position: relative; border-radius: 8px; overflow: hidden;">
-                  <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
-                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" 
-                            loading="lazy" allowfullscreen 
-                            src="https://maps.google.com/maps?q=Suriya+Infotech%2C+Madurai%2C+Tamilnadu&output=embed">
-                    </iframe>
-                  </div>
-                </div>
-              </div>
-                    
+      <div class="container">
+        <div class="row g-4">
+          <!-- Column: About Us -->
+          <div class="col-md-3">
+            <h5 class="footer-heading">Suriya Infotech</h5>
+            <p class="footer-about">
+              We provide the best range of laptops, desktops, gaming gear, and
+              refurbished electronics at unbeatable prices. Walk-in or explore
+              online!
+            </p>
           </div>
-      
-          <!-- Footer Bottom -->
-          <div class="text-center border-top border-light mt-4 pt-3 footer-bottom">
-            <small>&copy; 2025 Suriya Infotech. All rights reserved. | Designed by Monisshhhh</small>
+
+          <!-- Column: Quick Links -->
+          <div class="col-md-2">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="{% url 'home' %}" class="footer-link">Home</a></li>
+              <li>
+                <a href="{% url 'laptop' %}" class="footer-link">Laptops</a>
+              </li>
+              <li><a href="#" class="footer-link">Refurbished</a></li>
+              <li><a href="#" class="footer-link">Gaming</a></li>
+              <li><a href="#" class="footer-link">Accessories</a></li>
+              <li><a href="#" class="footer-link">Desktops</a></li>
+            </ul>
+          </div>
+
+          <!-- Column: Live Working Hours -->
+          <div class="col-md-2">
+            <h5 class="footer-heading">Working Hours</h5>
+            <p id="shop-status"></p>
+            <p class="footer-working">
+              Mon–Sat: 10 AM – 10 PM <br />
+              Sun: 10Am - 2PM
+            </p>
+          </div>
+
+          <!-- 4️⃣ Column: Contact Info -->
+          <div class="col-md-3">
+            <h5 class="footer-heading">Contact</h5>
+            <p class="footer-contact">
+              <i class="fas fa-phone-alt me-2"></i>7708040948, 6382886230
+            </p>
+            <p class="footer-contact">
+              <a href="mailto:suryainfotechmdu@gmail.com"
+                ><i class="fas fa-envelope me-2"></i
+                >suriyainfotechmdu@gmail.com</a
+              >
+            </p>
+            <p class="footer-contact">
+              <i class="fas fa-map-marker-alt me-2"></i>Townhall Road, Madurai
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" class="me-3 text-white"
+                ><i class="fab fa-facebook-f facebook"></i
+              ></a>
+              <a href="#" class="me-3 text-white"
+                ><i class="fab fa-instagram insta"></i
+              ></a>
+              <a href="#" class="me-3 text-white"
+                ><i class="fab fa-youtube youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- 5️⃣ Column: Google Map -->
+          <div class="col-md-2">
+            <h5 class="footer-heading">Find Us</h5>
+            <div
+              style="position: relative; border-radius: 8px; overflow: hidden"
+            >
+              <div
+                style="
+                  position: relative;
+                  padding-bottom: 75%;
+                  height: 0;
+                  overflow: hidden;
+                "
+              >
+                <iframe
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 0;
+                  "
+                  loading="lazy"
+                  allowfullscreen
+                  src="https://maps.google.com/maps?q=Suriya+Infotech%2C+Madurai%2C+Tamilnadu&output=embed"
+                >
+                </iframe>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-      
-      <!-- Floating Icon -->
-      <a href="https://wa.me/+916382886230" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-  
+
+        <!-- Footer Bottom -->
+        <div
+          class="text-center border-top border-light mt-4 pt-3 footer-bottom"
+        >
+          <small
+            >&copy; 2025 Suriya Infotech. All rights reserved. | Designed by
+            Monisshhhh</small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Icon -->
+    <a
+      href="https://wa.me/+916382886230"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- JS: Bootstrap bundle for navbar toggle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <!-- Custom JS -->
-     {% block extra_js %}{% endblock extra_js %}
+    {% block extra_js %}{% endblock extra_js %}
     <script src="{% static 'js/base.js' %}"></script>
-</body>
+  </body>
 </html>
